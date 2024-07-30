@@ -10,7 +10,7 @@ const app = express();
 
 // Connect to the database
 connectDB();
-app.use(cors());
+
 app.use(
   cors({
     origin: "https://node-project-2-20g2.onrender.com/api/users",
