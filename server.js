@@ -10,12 +10,15 @@ const app = express();
 
 // Connect to the database
 connectDB();
+app.use(cors());
 app.use(
   cors({
-    origin: "https://node-project-2-20g2.onrender.com/api/users",
+    origin: "http://127.0.0.1:3000",
     
   })
 );
+
+
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, "public")));
