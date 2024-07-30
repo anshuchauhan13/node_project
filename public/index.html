@@ -23,7 +23,7 @@
         autocomplete="off"
       />
 
-      <h2>Add User</h2>
+      <h2>LOGIN YOURSELF</h2>
       <input
         type="text"
         name="firstName"
@@ -120,7 +120,7 @@
           $.ajax({
             type: "POST",
            url: "https://node-project-2-20g2.onrender.com/api/users",
-            //  url: "http://localhost:3000/api/users",
+            
             data: JSON.stringify(formData),
             contentType: "application/json",
             success: function (response) {
