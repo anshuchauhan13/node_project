@@ -13,8 +13,7 @@ connectDB();
 app.use(
   cors({
     origin: "https://node-project-2-20g2.onrender.com/api/users",
-    methods:['GET', 'POST'],
-    allowedHeaders:["Content-Type"]
+    
   })
 );
 app.use(bodyParser.json());
