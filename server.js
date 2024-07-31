@@ -13,7 +13,7 @@ connectDB();
 
 app.use(
   cors({
-    origin: "https://node-project-2-20g2.onrender.com"
+    origin: " url: "http://localhost:3000"
     
   })
 );
